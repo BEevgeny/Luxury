@@ -2,22 +2,20 @@
 .head_rec { display: none; }
 .dropdown-toggle { width: 110%;}
 .head_soc a:nth-child(2) { display: none; }
-
+.about-social { display: none }
+.footer { display: none }
+.footerlast { display: none }
+.container { min-width: 1000px; }
+.row { display: inline-flex; flex-wrap: wrap; }
 }
 
 @media (max-width: 768px) {
 .currency { display: none !important; }
 .lengua { display: none !important; }
-.container { min-width: 735px; }
 .collect img{ width: 100% !important; }
 
 }
 
-
-body {
-    background: floralwhite;
-
-}
 .col-lg-12 {
     background: white;
     padding: 0;
@@ -47,6 +45,7 @@ body {
     -webkit-box-shadow: inset 0px 0px 28px -4px rgba(0,0,0,0.63);
     -moz-box-shadow: inset 0px 0px 28px -4px rgba(0,0,0,0.63);
     box-shadow: inset 0px 0px 28px -4px rgba(0,0,0,0.63);
+    min-width: 992px;
 }
 
 
@@ -207,7 +206,7 @@ body {
 
 }
 
-    .thumbnail:hover .caption {       /*  !!!!  */ 
+    .thumbnail:hover .caption {  
         display: block !important;
     }
 
@@ -236,56 +235,10 @@ body {
 
 .caption h4{
     text-align: center;
-    border-bottom: 1px solid #98918a;
-    padding-bottom: 20px;   
+    border-bottom: 1px #cdcdcd dotted;      
+    padding-bottom: 10px;   
 }
 
-/* Звездный рейтинг */
-.rating label {
-    position: relative;
-    display: inline;
-    float: left;
-    z-index:1;
-    width:5px;
-    height:16px;
-
-}
-    .rating input[type=radio] {
-        z-index: 2;
-        display:inline;
-        float: left;
-        width:16px;
-        height:16px;
-        opacity: 0;
-        max-width: 10%;
-    }
-    .star {
-      background:url(images/star.png) 0 -16px;
-        height:16px;
-        width:16px;
-        z-index:1;
-        position: absolute;
-        top: 0;
-        display:block;
-        cursor:pointer;
-        left: -16px;
-    }
-    .rating:hover .star {
-        background-position: 0 -32px;
-    }
-    input:checked ~ label .star {
-        background-position: 0 0;
-        text-align: center;
-    }
-    input:checked + label .star {
-        background-position: 0 -16px;
-    }
-
-
-.rating {
-    margin-left: 25%;
-    margin-top: -30px;
-}
 
 .card {
     padding: 5% 0;
@@ -293,7 +246,7 @@ body {
     text-align: center;
     display: block;
     float: left;
-    border-right: 1px #98918a solid;
+    border-right: 1px #cdcdcd dotted;
     text-transform: capitalize;
     width: 45%;
     color: #98918a;
@@ -416,6 +369,7 @@ a .p_red { font-size: 0.9em; }
 .footer {
     height: 190px;
     width: 100%;
+    min-width: 992px;
     background: #efefef;
 }
 
@@ -464,14 +418,11 @@ a .p_red { font-size: 0.9em; }
     color: #6f6f6f;
 }
 
-
 .footer-link a:hover {
     color: #fe5252;
     text-decoration: none;
     margin-left: 10px;
 }
-
-
 
 .footer-discript>li {
     width: 20%;
@@ -482,7 +433,6 @@ a .p_red { font-size: 0.9em; }
     height: 25px;
     background-color: #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-
 }
 
 .footer-button {
@@ -497,42 +447,39 @@ a .p_red { font-size: 0.9em; }
     list-style-type: none;
 }
 
-.footer-contact li {
-    font-family: "Baroque Script";
-    font-size: 18px;
-    font-weight: 400;
-    font-style: italic;
-    padding: 11px 0px 0px 0px;
-}
-
-
-
-
+    .footer-contact li {
+        font-family: "Baroque Script";
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        padding: 11px 0px 0px 0px;
+    }
 
 
 .footerlast {
     height: 55px;
     width: 100%;
+    min-width: 992px;
     background: #292929;
 }
-.footerlast-text {
-    display: inline-flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
+    .footerlast-text {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
 
-.footerlast-text img {
-    margin: 0 6px;
-}
+    .footerlast-text img {
+        margin: 0 6px;
+    }
 
-.footerlast-text h3{
-    color: #cecece;
-    font-family: "Droid Sans";
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 25px;
-}
+    .footerlast-text h3{
+        color: #cecece;
+        font-family: "Droid Sans";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25px;
+    }
 
 
 
