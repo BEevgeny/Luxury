@@ -414,9 +414,95 @@ a .p_red { font-size: 0.9em; }
 /* "ПОДВАЛ" */
 
 .footer {
+    height: 190px;
+    width: 100%;
+    background: #efefef;
+}
+
+.footer-inside {
     height: 141px;
+}
+
+.footer-title {
+    display: inline-flex;
     width: 100%;
-    background: #677575;
+    justify-content: space-around;
+    color: #4c4c4c;
+    font-family: "Droid Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-left: 0;
+}
+
+    .footer-title li {
+        text-transform: uppercase;
+        list-style-type: none;
+        padding: 20px;
+        border-bottom: 1px #cdcdcd dotted;
+        font-weight: 700;
+    }
+
+.footer-discript {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+    color: #6f6f6f;
+    font-family: "Droid Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.footer-one-block {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-discript a {
+    color: #6f6f6f;
+}
+
+
+.footer-link a:hover {
+    color: #fe5252;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+
+.footer-discript>li {
+    width: 20%;
+}
+
+.footer-input {
+    width: 135px;
+    height: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
+}
+
+.footer-button {
+    border: 0;
+    width: 30px;
+    height: 23px;
+    background: #fe5252;
+    color: #fff;
+}
+
+.footer-contact {
+    list-style-type: none;
+}
+
+.footer-contact li {
+    font-family: "Baroque Script";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 11px 0px 0px 0px;
 }
 
 
@@ -424,14 +510,31 @@ a .p_red { font-size: 0.9em; }
 
 
 
-
-
-
-
-
-
-.footer2 {
-    height: 41px;
+.footerlast {
+    height: 55px;
     width: 100%;
-    background: #444e4e;
+    background: #292929;
 }
+.footerlast-text {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footerlast-text img {
+    margin: 0 6px;
+}
+
+.footerlast-text h3{
+    color: #cecece;
+    font-family: "Droid Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+
+
+
